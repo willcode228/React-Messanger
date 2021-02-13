@@ -1,0 +1,9 @@
+.icon__item{
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+    background: var(--white);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px;
+}

@@ -1,0 +1,51 @@
+.profile{
+    background: var(--grey);
+    height: 100vh;
+    overflow-y: auto;
+}
+.img__wrapper{
+    overflow: hidden;
+	height: 192px;
+	-o-object-position: center;
+	   object-position: center;
+}
+.img{
+    width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.text__wrapper{
+    padding: 20px;
+}
+.name{
+    font-weight: 700;
+    font-size: 16px;
+}
+.status{
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--secondary-grey);
+}
+.social__icon__list{
+    margin: 20px 0;
+    list-style-type: none;
+    display: flex;
+}
+.btn{
+    width: 100%;
+    height: 35px;
+    background: var(--blue);
+    border-radius: var(--secondary-radius);
+    color: var(--white);
+    font-size: 13px;
+    font-weight: 700;
+}
+.profile::-webkit-scrollbar {
+    width: 8px;
+    background-color: transparent;
+}
+  
+.profile::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: var(--secondary-black);
+}

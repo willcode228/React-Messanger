@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+
+/*******Variables********/
+:root{
+    /* Colours */
+
+    /* Main */
+    --black: #25272A;
+    --white: #FFFFFF;
+    --grey: #B5B5B5;
+    --blue: #3577EF;
+
+
+    /* Secondary */
+    --secondary-black: rgba(37, 39, 42, 75%);
+    --secondary-grey: #919191;
+
+    /* Transitions */
+    --low-transition: 0.7s;
+    --fast-transition: 0.5s;
+
+    /* Border radius */
+    --main-radius: 4px;
+    --secondary-radius: 10px;
+}
+/*******Variables*******/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    overflow: hidden;
+}
+
+/********Main Styles********/
+button{
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+input,
+textarea{
+    outline: none;
+}
+
+.main__input{
+    border:  1px solid var(--grey);
+    border-radius: var(--main-radius);
+    transition: var(--low-transition);
+}
+.main__input:hover{
+    border-color: var(--black);
+}
+.main__input:focus{
+    border-radius: var(--secondary-radius);
+}

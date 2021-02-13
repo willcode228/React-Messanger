@@ -1,0 +1,29 @@
+.item{
+    color: var(--secondary-grey);
+    padding: 5px 10px;
+    margin: 5px 0px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    border-radius: var(--main-radius);
+    transition: var(--low-transition);
+}
+.item__active{
+    background: var(--secondary-black);
+    color: var(--grey);
+    border-radius: 0px;
+}
+.item.item__active:hover{
+    background: var(--secondary-black);
+    color: var(--white);
+    border-radius: var(--main-radius);
+}
+.item:hover{
+    background: var(--grey);
+    color: var(--white);
+}
