@@ -5,29 +5,11 @@ import Channel from './Channel/Channel';
 import Friend from './Friend/Friend';
 import Hgroup from './Hgroup/Hgroup';
 
-import img from '../images/ava/Layer 10.png';
-import img1 from '../images/ava/Layer 12.png';
-import img2 from '../images/ava/Layer 13.png';
-import img3 from '../images/ava/Layer 16.png';
 
-function Dialogs() {
+function Dialogs(props) {
 
-    let data = {
-        name: 'Johny Spilberg',
-        friendImg: img
-    }
-    let data1 = {
-        name: 'Piter Doe',
-        friendImg: img1
-    }
-    let data2 = {
-        name: 'Bill Fold',
-        friendImg: img2
-    }
-    let data3 = {
-        name: 'Riana',
-        friendImg: img3
-    }
+    let channels = props.state.Channels.map(el => <Channel text={el.title}/>),
+        friends = props.state.Friends.map(el => <Friend data={el}/>);
 
     return (
         <div className={s.dialogs}>
@@ -36,16 +18,18 @@ function Dialogs() {
 
             <div className={s.channels}>
                 <h3 className={s.title}>Channels</h3>
-                <Channel text="profile"/>
+                {/* <Channel text="profile"/>
                 <Channel text="gulp"/>
-                <Channel text="js"/>
+                <Channel text="js"/> */}
+                {channels}
             </div>
             <div className={s.friends}>
                 <h3 className={s.title}>Friends</h3>
-                <Friend data={data}/>
+                {/* <Friend data={data}/>
                 <Friend data={data1}/>
                 <Friend data={data2}/>
-                <Friend data={data3}/>
+                <Friend data={data3}/> */ }
+                {friends}
             </div>
 
         </div>

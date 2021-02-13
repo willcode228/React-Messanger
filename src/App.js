@@ -5,11 +5,11 @@ import Dialogs from './components/Dialogs/Dialogs';
 import Profile from './components/Profile/Profile';
 import { BrowserRouter } from 'react-router-dom';
 
-function App() {
+function App(props) {
   return (
     <BrowserRouter>
       <div className={s.container}>
-        <Dialogs />
+        <Dialogs state={props.state.Dialogs}/>
         <Chat />
         <Profile />
       </div>
